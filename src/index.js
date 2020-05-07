@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { HomePage } from './pages/homepage/homepage.component';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-
-  <HomePage />
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
   ,
   document.getElementById('root')
 );
