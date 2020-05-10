@@ -47,8 +47,7 @@ class Directory extends React.Component {
     }
 
     componentDidMount(){
-        console.log(...this.state.sections)
-        console.log('in did mount :')
+
     }
     render() {
 
