@@ -8,6 +8,7 @@ import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { connect } from "react-redux";
 import { setCurrentUser } from './redux/user/user.actions';
+import CheckoutPage from './components/checkout/checkout.component';
 
 // <button onClick={() => props.history.push('/hats/abc')}>history.push</button>
 
@@ -51,6 +52,10 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path='/' component={HomePage} />
+          <Route path='/shop' component={ShopPage} />
+          <Route path='/checkout' component={CheckoutPage} />
+
+
           <Route exact path='/signin' render={() => this.props.currentUser ? (<Redirect to='/' />) : (<SignInAndSignUpPage />)}></Route>
         </Switch>
 
