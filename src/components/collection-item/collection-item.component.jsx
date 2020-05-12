@@ -20,6 +20,7 @@ const CollectionItem = ({ item, addItem }) => {
       </div>
       <CustomButton
         onClick={() => {
+          // console.log(`item: ${JSON.stringify(item)}`)
           addItem(item);
         }}
         inverted
